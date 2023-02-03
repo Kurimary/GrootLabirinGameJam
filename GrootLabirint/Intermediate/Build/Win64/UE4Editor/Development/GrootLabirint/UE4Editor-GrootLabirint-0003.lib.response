@@ -1,0 +1,15 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-GrootLabirint-0003.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\Gamer\Desktop\GrootLabirinGameJam\GrootLabirint\Intermediate\Build\Win64\GrootLabirintEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Users\Gamer\Desktop\GrootLabirinGameJam\GrootLabirint\Intermediate\Build\Win64\UE4Editor\Development\GrootLabirint\BaseCharacter.cpp.obj"
+"C:\Users\Gamer\Desktop\GrootLabirinGameJam\GrootLabirint\Intermediate\Build\Win64\UE4Editor\Development\GrootLabirint\GrootLabirint.cpp.obj"
+"C:\Users\Gamer\Desktop\GrootLabirinGameJam\GrootLabirint\Intermediate\Build\Win64\UE4Editor\Development\GrootLabirint\BaseCharacter.gen.cpp.obj"
+"C:\Users\Gamer\Desktop\GrootLabirinGameJam\GrootLabirint\Intermediate\Build\Win64\UE4Editor\Development\GrootLabirint\GrootLabirint.init.gen.cpp.obj"
+"C:\Users\Gamer\Desktop\GrootLabirinGameJam\GrootLabirint\Intermediate\Build\Win64\UE4Editor\Development\GrootLabirint\Default.rc2.res"
+/OUT:"C:\Users\Gamer\Desktop\GrootLabirinGameJam\GrootLabirint\Intermediate\Build\Win64\UE4Editor\Development\GrootLabirint\UE4Editor-GrootLabirint-0003.lib"
