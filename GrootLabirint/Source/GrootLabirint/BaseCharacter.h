@@ -22,8 +22,21 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+	UFUNCTION(BlueprintCallable)
+	void DealDamage(float Damage);
 
+	UFUNCTION(BlueprintCallable)
+	void SetHealth(float Health);
+	UFUNCTION(BlueprintCallable)
+	float GetHealth() const;
+	UFUNCTION(BlueprintCallable)
+	void SetMaxHealth(float InMaxHealth);
+	UFUNCTION(BlueprintCallable)
+	float GetMaxHealth() const;
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+private:
+	float Health = 0;
+	float MaxHealth = 0;
 
 };

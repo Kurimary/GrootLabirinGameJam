@@ -2,6 +2,7 @@
 
 
 #include "BaseCharacter.h"
+#include "Math/UnrealMathUtility.h"
 
 // Sets default values
 ABaseCharacter::ABaseCharacter()
@@ -23,6 +24,32 @@ void ABaseCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+}
+
+void ABaseCharacter::DealDamage(float Damage)
+{
+
+	SetHealth(FMath::Clamp(GetHealth() - Damage, 0.0f, GetMaxHealth()));
+}
+
+void ABaseCharacter::SetHealth(float InHealth)
+{
+	Health = InHealth;
+}
+
+float ABaseCharacter::GetHealth() const
+{
+	return Health;
+}
+
+void ABaseCharacter::SetMaxHealth(float InMaxHealth)
+{
+	MaxHealth = InMaxHealth;
+}
+
+float ABaseCharacter::GetMaxHealth() const
+{
+	return MaxHealth;
 }
 
 // Called to bind functionality to input
